@@ -16,4 +16,5 @@ class MethodsQuizTest < MiniTest::Test
 		assert_equals 9, @m.without_doubles(4, 5, false)
 		assert_equals 9, @m.without_doubles(4, 4, true)
 		assert_equals 7, @m.without_doubles(6, 6, true)
+	end
 end
