@@ -12,5 +12,8 @@ class MethodsQuizTest < MiniTest::Test
 	end
 
 	# TODO - write tests here
-
+	def without_doubles_test
+		assert_equals 9, @m.without_doubles(4, 5, false)
+		assert_equals 9, @m.without_doubles(4, 4, true)
+		assert_equals 7, @m.without_doubles(6, 6, true)
 end
